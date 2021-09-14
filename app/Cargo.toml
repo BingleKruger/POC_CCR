@@ -1,0 +1,20 @@
+[package]
+name = "app"
+version = "1.0.0"
+authors = ["Bingle Kruger"]
+build = "build.rs"
+
+[dependencies]
+sgx_types = { git = "https://github.com/apache/teaclave-sgx-sdk.git" }
+sgx_urts = { git = "https://github.com/apache/teaclave-sgx-sdk.git" }
+sgx_crypto_helper = { git = "https://github.com/apache/teaclave-sgx-sdk.git" , rev = "v1.1.3"}
+serde_json = "1.0"
+serde = "*"
+serde_derive = "*"
+
+
+
+[patch.'https://github.com/apache/teaclave-sgx-sdk.git']
+sgx_types = { path = "../../../sgx_types" }
+sgx_urts = { path = "../../../sgx_urts" }
+
