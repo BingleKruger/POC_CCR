@@ -8,16 +8,16 @@ This file serves as a guide for setting up the application on a local machine an
 
 # Requirements
 
-* [Docker] (https://www.docker.com/)
-* [Rust SGX SDK] (https://github.com/apache/incubator-teaclave-sgx-sdk)
+* [Docker](https://www.docker.com/)
+* [Rust SGX SDK](https://github.com/apache/incubator-teaclave-sgx-sdk)
 * Compatible machine: The code was developed on a 2014 Macbook Pro
-* IDE: The code was developed with [CLION] (https://www.jetbrains.com/clion/), but [VSCode] (https://code.visualstudio.com/) also works
+* IDE: The code was developed with [CLION](https://www.jetbrains.com/clion/), but [VSCode](https://code.visualstudio.com/) also works
 
 # Setup and Installation
 
 The setup will cover the steps to setup the application on a MacOS machine that does not natively support Intel SGX. The application will run a simulated version of Intel SGX using a docker container.
 
-1. The first step is to install the [Rust SGX SDK specifically for simulation mode] (https://github.com/apache/incubator-teaclave-sgx-sdk#use-simulation-mode-for-non-sgx-enabled-machine-includes-macos)
+1. The first step is to install the [Rust SGX SDK specifically for simulation mode](https://github.com/apache/incubator-teaclave-sgx-sdk#use-simulation-mode-for-non-sgx-enabled-machine-includes-macos)
 
 * Pull the docker container: `$ docker pull baiduxlab/sgx-rust`
 * Start a docker with the Rust SGX SDK `$ docker run -v /your/path/to/rust-sgx:/root/sgx -ti baiduxlab/sgx-rust`
@@ -32,14 +32,14 @@ The setup will cover the steps to setup the application on a MacOS machine that 
   `root@docker:~/sgx/samplecode/helloworld# make` - This may take some time depending on your internet connection and machine
   `root@docker:~/sgx/samplecode/helloworld# cd bin`
   `root@docker:~/sgx/samplecode/helloworld/bin# ./app`
-** Consult the [Rust SGX SDK] (https://github.com/apache/incubator-teaclave-sgx-sdk) page if any errors occur, they have detailed setup instructions.
+** Consult the [Rust SGX SDK](https://github.com/apache/incubator-teaclave-sgx-sdk) page if any errors occur, they have detailed setup instructions.
 
 3. Once you have verified that the Rust SGX SDK is working:
 * Navigate to the samplecode folder in the Rust SGX SDK: e.g. `cd /your/path/to/rust-sgx/samplecode/`
 * Clone this repository into the samplecode folder: ``
 
 4. Download the data for the application:
-* Download the compressed file containing all the data from [Google Drive] ()
+* Download the compressed file containing all the data from [Google Drive](https://drive.google.com/file/d/1MTeFmfN4V02Uyb2WOoi4xtI4TG5UBw8J/view?usp=sharing)
 * Unzip the compressed file and extract all the json files to `/your/path/to/rust-sgx/samplecode/POC_CCR/data/`
 
 5. Running the POC Application
