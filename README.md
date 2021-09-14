@@ -27,7 +27,7 @@ The setup will cover the steps to setup the application on a MacOS machine that 
 * Navigate to `~/sgx/samplecode/helloworld`
   * set the `SGX_MODE` to `SW` in Makefile
   * Replace `SGX_MODE ?= HW` with `SGX_MODE ?= SW`
-  * OR run export `SGX_MODE=SW` in your terminal
+  * OR run `export SGX_MODE=SW` in your terminal
 * Test if the sample code is working:
 
   `root@docker:~/sgx/samplecode/helloworld# make`
