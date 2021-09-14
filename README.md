@@ -40,7 +40,7 @@ The setup will cover the steps to setup the application on a MacOS machine that 
 
 3. Once you have verified that the Rust SGX SDK is working:
 * Navigate to the samplecode folder in the Rust SGX SDK: e.g. `cd /your/path/to/rust-sgx/samplecode/`
-* Clone this repository into the samplecode folder: `gh repo clone BingleKruger/POC_CCR`
+* Clone this repository into the samplecode folder
 
 4. Download the data for the application:
 * Download the compressed file containing all the data from [Google Drive](https://drive.google.com/file/d/1MTeFmfN4V02Uyb2WOoi4xtI4TG5UBw8J/view?usp=sharing)
