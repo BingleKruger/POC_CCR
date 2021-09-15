@@ -30,7 +30,6 @@ extern crate sgx_tseal;
 #[cfg(not(target_env = "sgx"))]
 #[macro_use]
 extern crate sgx_tstd as std;
-extern crate sgx_tcrypto;
 extern crate hex;
 extern crate rustc_serialize;
 extern crate rusty_machine;
