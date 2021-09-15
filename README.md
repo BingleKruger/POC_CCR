@@ -49,7 +49,7 @@ The setup will cover the steps to setup the application on a MacOS machine that 
 5. Running the POC Application
 * Remember to start the docker container, consult Step 1.
 * Navigate to the correct folder: `root@docker:~# cd sgx/samplecode/POC_CCR`
-* Run export `SGX_MODE=SW` in your terminal
+* Run `export SGX_MODE=SW` in your terminal
 
   `root@docker:~/sgx/samplecode/POC_CCR# make`
   
