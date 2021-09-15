@@ -17,7 +17,6 @@
 
 extern crate sgx_types;
 extern crate sgx_urts;
-extern crate sgx_crypto_helper;
 extern crate serde_derive;
 extern crate serde;
 extern crate serde_json;
